@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="Login_css/style.css">
+</head>
+
+<style type="text/css">
+.selected_position,.selected_department{
+  width: 100%;
+  height: 50px;
+}
+.flex-row-adjusted{
+  height: 30px;
+}
+a{
+  color:#2dc6bf;
+}
+.lf--submit-adjusted{
+  padding-bottom: .5em;
+}
+</style>
+
+<body>
+  <form class='wrap' method="post" action="signin.php">
+  
+    <div class="flex-row">
+        <input id="email" class='lf--input' placeholder='Enter Email' type='email' name="email">
+  </div>
+  <div class="flex-row">
+    <input id="password" class='lf--input' placeholder='Password' type='password' name="psw">
+  </div>
+  <input class='lf--submit lf--submit-adjusted' type='submit' value='Sign In' name="submit" id="btnSubmit">
+
+  <p style="font-size:.6em;color:#2dc6bf;text-align:center;cursor:hand"><u><a href="users_signup.php">Sign Up</a></u></p>
+   <p style="font-size:.6em;color:#2dc6bf;text-align:center;cursor:hand"><u><a href="verifyemail.php">Verify your email</a></u></p>
+
+</form>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<?php
+
+$host = "sql303.epizy.com";
+$user = "epiz_24195875";
+$pass = "tlTVZPqz7tL";
+$database = "epiz_24195875_self";
+
+$connection_String = mysqli_connect($host,$user,$pass,$database);
+ $get_all_announcement_command = "SELECT * FROM general_announcement ORDER BY id DESC";
+ $execute_get_announcement_query = mysqli_query($connection_String,$get_all_announcement_command);
+
+
+ while( $get_rows = mysqli_fetch_assoc($execute_get_announcement_query)){
+ echo "<div class='col-lg-4 col-md-4 col-sm-6'>";
+ echo "<div class='panel panel-decorated'>
+           <div class = 'panel-heading'>
+         <h4 class = 'panel-title ptitle'>".$get_rows["message_title"]."</h4>
+       </div>";
+
+  echo  "<div class = 'panel-body pbody'>
+         <span>".$get_rows["message_body"]."</span>
+         <br><br>
+          </div>
+       </div>
+       </div>";
+     }
+
+ ?>
