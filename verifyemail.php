@@ -53,7 +53,7 @@ while($row=$result->fetch_assoc()){
         $name='vikash';
         $body="it is your code $code";
         $sub="Verification code";
-        $headers=array("Authorization: Bearer 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",
+        $headers=array("Authorization: api key",
                   'Content-Type: application/json'
             );
         $data=array(
