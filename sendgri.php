@@ -16,7 +16,7 @@ $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
 $email->addContent(
     "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
 );
-$api_key="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";
+
 $sendgrid = new \SendGrid($api_key);
 if($sendgrid->send($email)){
     echo'email send';
@@ -29,7 +29,7 @@ if($sendgrid->send($email)){
         $name='vikash';
         $body='it is your code';
         $sub="SUPERSINIOR";
-        $headers=array("Authorization: Bearer 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",
+        $headers=array("Authorization: api key",
                   'Content-Type: application/json'
             );
         $data=array(
