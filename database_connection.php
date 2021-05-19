@@ -1,8 +1,8 @@
 <?php
-$host='sql303.epizy.com';
-  $user='epiz_24195875';
-  $pas='tlTVZPqz7tL';
-  $db='epiz_24195875_self';
+$host='ec2-18-215-111-67.compute-1.amazonaws.com';
+  $user='kytqnejrzaiqki';
+  $pas='242a0cecc3810b9185d92af3bd80bce292f07d2a66480796b0c95d65b46d814d';
+  $db='d534t7mqrt9kqi';
   $conn=new mysqli($host,$user,$pas,$db);
   if($conn->connect_error){
       echo$conn->connect_error;
