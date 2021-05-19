@@ -6,7 +6,8 @@ $username = "epiz_24195875";
 $password = "tlTVZPqz7tL";
 $dbname = "epiz_24195875_self";
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+//$conn = new mysqli($servername, $username, $password, $dbname);
+include('database_connection.php');
 //$mail=new PHPMailer;
 /*$mail->isSMTP();
 $mail->Host="smtp.gmail.com";
